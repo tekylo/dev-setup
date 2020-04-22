@@ -13,7 +13,7 @@ sudo apt-get update
 sudo snap install mailspring
 
 # Verify and exit installation
-MAILSPRING_CHECK="$(mailspring -v)"
+MAILSPRING_CHECK="$(mailspring -v 1>&1)"
 if [[ "$MAILSPRING_CHECK" == *"1.7.5"* ]]; then
   echo -e "\\033[0;32m[OK]\\033[0m"
   exit 0
