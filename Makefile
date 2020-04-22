@@ -1,5 +1,9 @@
 .PHONY: all
-all: sublime-text ## Installs all the programs inside this repository in single go.
+all: mailspring sublime-text ## Installs all the programs inside this repository in single go.
+
+.PHONY: mailspring
+mailspring: ## Installs the sublime text.
+	@./mailspring.sh
 
 .PHONY: sublime-text
 sublime-text: ## Installs the sublime text.
